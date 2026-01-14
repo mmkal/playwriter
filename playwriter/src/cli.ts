@@ -80,9 +80,10 @@ cli
       })
     }
 
-    // Set PLAYWRITER_AUTO_ENABLE so the relay auto-creates a tab
+    // Set env vars for standalone mode
     if (options.chromium) {
       process.env.PLAYWRITER_AUTO_ENABLE = '1'
+      process.env.PLAYWRITER_STANDALONE_MODE = '1'
     }
 
     const { startMcp } = await import('./mcp.js')
