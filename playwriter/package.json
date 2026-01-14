@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "repository": "https://github.com/remorses/playwriter",
   "scripts": {
-    "build": "rm -rf dist *.tsbuildinfo && mkdir dist && bun scripts/build-selector-generator.ts && bun scripts/build-bippy.ts && tsc && bun scripts/build-resources.ts",
+    "build": "rm -rf dist *.tsbuildinfo && mkdir dist && bun scripts/build-selector-generator.ts && bun scripts/build-bippy.ts && tsc && bun scripts/build-resources.ts && bun scripts/copy-extension.ts",
     "prepublishOnly": "pnpm build",
     "watch": "tsc -w",
     "typecheck": "tsc --noEmit",
@@ -20,7 +20,8 @@
     "dist",
     "src",
     "esm",
-    "bin.js"
+    "bin.js",
+    "extension"
   ],
   "keywords": [],
   "author": "Tommaso De Rossi, morse <beats.by.morse@gmail.com>",

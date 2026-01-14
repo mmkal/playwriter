@@ -2,6 +2,7 @@ node_modules
 .vercel
 dist
 esm
+playwriter/extension
 .DS_Store
 *.tsbuildinfo
 .ultra.cache.json
